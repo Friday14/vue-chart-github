@@ -24,7 +24,7 @@
   export default {
     mounted(){
       this.firstDate = moment().subtract(1, 'year');
-      for (let i = 1; i <= 280; i++) {
+      for (let i = 1; i <= 32; i++) {
         let date = moment(this.firstDate).add(i, 'days');
         let obj = {
           date: date,
@@ -32,11 +32,14 @@
         };
         this.points.push(obj)
       }
+
       console.log(this.points)
+
       this.lastDate = moment();
       let days = moment().diff(this.firstDate, 'days');
       this.weeks = this.range(days / 7);
 
+      //  depth
       this.average = this.points.reduce(function (sum, current) {
           return sum + current.data;
         }, 0) / this.points.length;
@@ -124,9 +127,15 @@
 
 <style>
   .chart-dashboard {
-    width: 100%;
-    height: 300px;
-    background: black;
+    width: 592px;
+    margin: 0 auto;
+
+    height: 96px;
+    padding-top: 8px !important;
+    padding-bottom: 8px !important;
+    border-color: #d1d5da !important;
+    background: white;
+    border: 1px solid;
     text-align: left;
   }
 

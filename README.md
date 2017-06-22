@@ -1,6 +1,8 @@
 # vue-chart-github
-
-> Vue chart as github
+<p align="center">
+<img src="https://image.prntscr.com/image/ClRk9VjeQBCeryYJ6-BWXQ.png">
+</p>
+> Vue chart as github. The work is not completed.
 
 ## Build Setup
 
