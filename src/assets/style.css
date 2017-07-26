@@ -1,0 +1,68 @@
+
+.chart-dashboard {
+  width: 592px;
+  margin: 0 auto;
+  position: relative;
+  height: 96px;
+  padding-top: 8px !important;
+  padding-bottom: 8px !important;
+  border-color: #d1d5da !important;
+  background: white;
+  border: 1px solid;
+  text-align: left;
+}
+
+.line-month {
+  position: relative;
+  margin-left: 50px;
+}
+.line-month .month {
+  font-size: 10px;
+  position: absolute;
+  /* top: 5px; */
+  left: 10px;
+}
+
+.line-day{
+  float: left;
+  padding-top: 11px;
+}
+
+.line-day .day{
+    font-size: 10px;
+    margin-bottom: 1.9px;
+}
+
+rect {
+  fill: rgb(235, 237, 240);
+}
+
+.tooltip {
+  font-size: 13px;
+  display: block !important;
+  pointer-events: none;
+  padding: 14px;
+  z-index: 10000;
+}
+
+.tooltip .tooltip-inner {
+  background: black;
+  color: white;
+  padding: 13px 4px 10px;
+}
+
+.tooltip tooltip-arrow {
+  display: none;
+}
+
+.tooltip[aria-hidden='true'] {
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity .15s, visibility .15s;
+}
+
+.tooltip[aria-hidden='false'] {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity .15s;
+}
